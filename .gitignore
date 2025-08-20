@@ -1,0 +1,36 @@
+# Arquivos de ambiente
+.env
+.env.local
+.env.production
+.env.staging
+
+# Dados persistidos dos containers
+postgres_data/
+n8n_data/
+pgadmin_data/
+
+# Logs
+*.log
+logs/
+
+# Backups
+*.sql
+backup_*.sql
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
