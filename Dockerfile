@@ -1,4 +1,4 @@
-# Dockerfile para n8n no Railway
+# Dockerfile para n8n no Railway - v2
 FROM n8nio/n8n:latest
 
 # Instalar dependências adicionais se necessário (Alpine Linux usa apk)
