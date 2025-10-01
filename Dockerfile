@@ -1,9 +1,9 @@
 # Dockerfile para n8n no Railway
 FROM n8nio/n8n:latest
 
-# Instalar dependências adicionais se necessário
+# Instalar dependências adicionais se necessário (Alpine Linux usa apk)
 USER root
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+RUN apk update && apk add --no-cache curl && rm -rf /var/cache/apk/*
 
 # Voltar para o usuário node
 USER node
